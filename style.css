@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 10px;
+}
+
+nav {
+  background: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav li {
+  margin: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #007bff;
+  border-radius: 5px;
+}
+
+section {
+  margin: 30px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+.project {
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 4px solid #007bff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tags span {
+    margin: 5px 5px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+}
